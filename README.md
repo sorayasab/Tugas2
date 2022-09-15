@@ -1,10 +1,12 @@
 # Penjelasan
+## Bagan Request Client ke Web Aplikasi Berbasis Django
+![Image Link](https://github.com/sorayasab/Tugas2/blob/main/Images/request_client.jpg)
 
    Terdapat beberapa tahap alur *request client* yang diproses di Django. Pertama, *request* yang masuk ke dalam server Django akan diproses melalui urls. Kemudian diteruskan ke views yang didefinisikan oleh *developer* untuk memproses permintaan tersebut. Jika ada proses yang memerlukan keterlibatan database, maka views akan memanggil query ke models dan database akan mengembalikan hasil dari query tersebut ke views. Setelah permintaan telah selesai diproses, hasil proses tersebut akan dipetakan ke dalam HTML yang telah ditentukan sebelum akhirnya HTML tersebut dikembalikan ke komputer atau pengguna sebagai respons.
 
 ## Heroku
 Berikut merupakan link aplikasi Heroku yang sudah di *deploy*:
-[https://tugas2-katalog.herokuapp.com/katalog/]
+https://tugas2-katalog.herokuapp.com/katalog/
 
 ## Virtual environment
 
@@ -15,7 +17,7 @@ The virtual environment merupakan environment yang digunakan Django mengeksekusi
 ## Cara Mengimplementasi
 
 Terdapat beberapa tahap yang perlu dilakukan dari awal hingga deploy ke Heroku, yaitu:
-1. Bukalah [https://github.com/pbp-fasilkom-ui/assignment-repository] dan klik "use this template". Kemudian akan dialihkan ke halaman untuk membuat repository baru.
+1. Bukalah https://github.com/pbp-fasilkom-ui/assignment-repository dan klik "use this template". Kemudian akan dialihkan ke halaman untuk membuat repository baru.
 2. Isi nama repository, pastikan bersifat public, abaikan "Include all branches", dan klik "create repository from this template".
 3. Setelah itu, buka terminal atau command prompt untuk clone repository ke komputer dengan menjalankan perintah git clone <URL_REPOSITORY>.
 4. Masuk ke dalam direktori dan buat sebuah *virtual environment* dengan menjalankan perintah berikut pada terminal atau command prompt ```shell python -m venv env ```
@@ -97,7 +99,7 @@ HEROKU_APP_NAME: <NAMA_APLIKASI_HEROKU_ANDA>
 23. Buka tab GitHub Actions di repository, tunggu beberapa saat, dan status deployment akan berubah menjadi success. 
 24. Sekarang aplikasi dapat diakses melalui ```shell https://tugas2-katalog.herokuapp.com/katalog ```
 
-
+----
 # Template Proyek Django PBP
 
 Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu Komputer Universitas Indonesia, Semester Ganjil 2022/2023
