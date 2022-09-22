@@ -4,9 +4,10 @@
 
 ## Heroku
 Berikut merupakan link aplikasi Heroku yang sudah di *deploy*:
-https://tugas3-mywatchlist.herokuapp.com/mywatchlist/json/
-https://tugas3-mywatchlist.herokuapp.com/mywatchlist/xml/
-https://tugas3-mywatchlist.herokuapp.com/mywatchlist/html/
+
+1. https://tugas3-mywatchlist.herokuapp.com/mywatchlist/json/
+2. https://tugas3-mywatchlist.herokuapp.com/mywatchlist/xml/
+3. https://tugas3-mywatchlist.herokuapp.com/mywatchlist/html/
 
 ## Data Delivery
 
