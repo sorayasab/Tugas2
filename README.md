@@ -1,10 +1,10 @@
 # Penjelasan Tugas 3
 ## Perbedaan JSON, XML, dan HTML
-![Image Link](https://github.com/sorayasab/Tugas2/blob/main/Images/request_client.jpg)
+![Image Link](https://github.com/sorayasab/Tugas2/blob/main/Images/difference.jpg)
 
 ## Heroku
 Berikut merupakan link aplikasi Heroku yang sudah di *deploy*:
-https://tugas3-mywatchlist.herokuapp.com
+https://tugas3-mywatchlist.herokuapp.com/mywatchlist
 
 ## Data Delivery
 
@@ -151,3 +151,13 @@ HEROKU_APP_NAME: <NAMA_APLIKASI_HEROKU_ANDA>
 16. Jalankan perintah add, commit, push perubahan ke dalam GitHub.
 
 23. Buka tab GitHub Actions di repository, tunggu beberapa saat, dan status deployment akan berubah menjadi success. 
+
+## Screenshot Postman
+1. JSON
+![Image Link](https://github.com/sorayasab/Tugas2/blob/main/Images/json.png)
+
+2. XML
+![Image Link](https://github.com/sorayasab/Tugas2/blob/main/Images/xml.png)
+
+3. HTML 
+![Image Link](https://github.com/sorayasab/Tugas2/blob/main/Images/html.png)
