@@ -5,7 +5,7 @@
   {% if user.is_authenticated %}
     <br>
     <h1 style="font-size:2vw;text-align:center"> Welcome, {{ user.get_username }}! </h1>
-    <p style="font-style: italic;text-align:center"> your to do list: </p>
+    <p style="font-style: italic;text-align:center">  your to do list: </p>
 
     <table border = "1" width = 413 style="margin-left:auto;margin-right:auto">
         <tr>
@@ -29,8 +29,8 @@
                 {% endif %}
 
                 <td>
-                    <button style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"><a href="{% url 'todolist:status' todo.id %}">Status</a></button>
-                    <button style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"><a href="{% url 'todolist:delete' todo.id %}">Delete</a></button>
+                    <button style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"><a href="{% url 'todolist:status' todolist.id %}">Status</a></button>
+                    <button style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"><a href="{% url 'todolist:delete' todolist.id %}">Delete</a></button>
                 </td>
             </tr>
         {% endfor %}
