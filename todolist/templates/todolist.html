@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+
+  {% if user.is_authenticated %}
+    <br>
+    <h1 style="font-size:2vw;text-align:center"> Welcome, {{ user.get_username }}! </h1>
+    <p style="font-style: italic;text-align:center"> your to do list: </p>
+
+    <table border = "1" width = 413 style="margin-left:auto;margin-right:auto">
+        <tr>
+        <th>Date Added</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Options</th>
+        </tr>
+        {% comment %} Add the data below this line {% endcomment %}
+        {% for todolist in list_todo %}
+            <tr>
+                <td>{{todolist.date}}</td>
+                <td>{{todolist.title}}</td>
+                <td>{{todolist.description}}</td>
+
+                {% if todolist.is_finished %}
+                    <td>Selesai</td>
+                {% else %}
+                    <td>Belum selesai</td>
+                {% endif %}
+
+                <td>
+                    <button style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"><a href="{% url 'todolist:status' todo.id %}">Status</a></button>
+                    <button style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"><a href="{% url 'todolist:delete' todo.id %}">Delete</a></button>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <br>
+    <br>
+    <button style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"><a href="{% url 'todolist:create-task' %}">Add New Task</a></button>
+    <br>
+    <button style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"><a href="{% url 'todolist:logout' %}">Logout</a></button>
+
+  {% endif %}
+
+<style>
+    body {
+        background-color:beige;
+    }
+</style>
+
+ {% endblock content %}
