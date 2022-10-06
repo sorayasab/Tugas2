@@ -1,0 +1,54 @@
+body {
+    background: linear-gradient(270deg, #001a5a, #7c0000); /* #265fec, #f54714*/
+    background-size: 400% 400%;
+    animation: grad 13s ease infinite;
+}
+@keyframes grad {
+    0% {background-position: 0% 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0% 50%}
+}
+h1{
+    margin: 20px auto;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    margin-top: 14%;
+}
+table{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 30;
+    margin-left: auto;
+    margin-right: auto;
+}
+form{
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    background: #191919;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 100px;
+    border-radius: 30px;
+}
+input[type= submit] {
+    border: 0;
+    background: black;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s
+}  
+input[type=submit]:hover{
+    background: #3498db
+}

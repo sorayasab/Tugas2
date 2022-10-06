@@ -1,0 +1,76 @@
+body {
+    background: linear-gradient(270deg, #001a5a, #7c0000); /* #265fec, #f54714*/
+    background-size: 400% 400%;
+    animation: grad 13s ease infinite;
+    text-align: center;
+}
+@keyframes grad {
+    0% {background-position: 0% 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0% 50%}
+}
+h1{
+    margin: 20px auto;
+    text-align: center;
+    font-family: sans-serif;
+    color: white
+}
+table {
+    margin-left: 10px;
+    margin-right: auto;
+}
+input[type=submit]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+input[type=submit]:hover {
+    background: #2ecc71
+}
+
+.login{
+    width: 600px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    background: #191919;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 100px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 10;
+    border-radius: 30px;
+}
+.login:hover{
+    box-shadow: 0 4px 40px 0 rgba(199, 199, 199, 0.527);
+}
+input[type=input] {
+    border: 0;
+    background: black;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s
+}  
+
+input[type=input]:hover{
+    background: #3498db
+}

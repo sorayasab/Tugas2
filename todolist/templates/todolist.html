@@ -1,11 +1,13 @@
 {% extends 'base.html' %}
+{% load static %}
 
  {% block content %}
+ <link rel="stylesheet" href="{% static 'todolist/todolist.css' %}">
 
   {% if user.is_authenticated %}
     <br>
-    <h1 style="font-size:2vw;text-align:center"> Welcome, {{ user.get_username }}! </h1>
-    <p style="font-style: italic;text-align:center">  your to do list: </p>
+    <h1 style="font-size:2vw;text-align:center;font-family:sans-serif;color: white;"> Welcome, {{ user.get_username }}! </h1>
+    <p style="font-style: italic;text-align:center;font-family: sans-serif;color: white;">  your to do list: </p>
 
     <table border = "1" width = 413 style="margin-left:auto;margin-right:auto">
         <tr>
@@ -35,6 +37,22 @@
             </tr>
         {% endfor %}
     </table>
+
+    <div class="card">
+        {% for todolist in list_todo %}
+        <h4 class="card-title">{{todolist.title}}</h4>
+        <h5 class="card-date">{{todolist.date}}</h5>
+        <p class="card-desc">{{todolist.description}}</p>
+        {% if todolist.is_finished %}
+        <status>
+                    <td style="font-family: Arial Rounded MT Bold;font-weight: 30;font-size: small">Selesai</td>
+                {% else %}
+                    <td style="font-family: Arial Rounded MT Bold;font-weight: 30;font-size: small">Belum selesai</td>
+                {% endif %}
+        {% endfor %}
+        </status>
+    </div>
+
     <br>
     <br>
     <br>
@@ -43,11 +61,5 @@
     <button style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"><a href="{% url 'todolist:logout' %}">Logout</a></button>
 
   {% endif %}
-
-<style>
-    body {
-        background-color:beige;
-    }
-</style>
 
  {% endblock content %}

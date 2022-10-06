@@ -1,1 +1,20 @@
-{% extends 'base.html' %}{% block content %}  <h1 style="font-size:2vw;text-align:center">Add New Task</h1>        <form method="POST" >              {% csrf_token %}              <table style="background-color:beige;margin-left:auto;margin-right:auto">                  {{ form.as_table }}                  <tr>                      <td></td>                    <td><input type="submit" name="submit" value="Create"/></td>                  </tr>              </table>          </form>{% endblock content %}
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}  
+<link rel="stylesheet" href="{% static 'todolist/create-task.css' %}">
+
+<h1>Add New Task</h1>
+
+        <form method="POST">  
+            {% csrf_token %}  
+            <table>  
+                {{ form.as_table }}  
+                <tr>  
+                    <td></td>
+                    <td><input type="submit" name="submit" value="Create"/></td>  
+                </tr>  
+            </table>  
+        </form>
+
+{% endblock content %}

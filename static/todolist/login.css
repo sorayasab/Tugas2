@@ -1,0 +1,108 @@
+body {
+    background: linear-gradient(270deg, #001a5a, #7c0000); /* #265fec, #f54714*/
+    background-size: 400% 400%;
+    animation: grad 10s ease infinite;
+}
+  
+@keyframes grad {
+    0% {background-position: 0% 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0% 50%}
+}
+.form{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 30;
+}
+
+.form-control {
+    border: 0;
+    background: black;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s
+}  
+
+.form-control:hover{
+    background: #3498db
+}
+
+h1{
+    margin: 20px auto;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+.login_btn{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+.login_btn:hover {
+    background: #2ecc71
+}
+.login{
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    background: #191919;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 100px;
+    border-radius: 30px;
+}
+.login:hover{
+    box-shadow: 0 4px 40px 0 rgba(199, 199, 199, 0.295);
+}
+
+table {
+	width:100%
+}
+
+td{
+    float:none;
+    position: relative;
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+a{
+    font-family: sans-serif;
+    color: #3498db;
+    font-weight: 10;
+}
+
+b, ul{
+    font-family: sans-serif;
+    color: white;
+    font-weight: 10;
+}
+
+/*
+references:
+https://codepen.io/P1N2O/pen/pyBNzX
+https://www.gradient-animator.com/
+
+webkit moz o
+https://webdesign.tutsplus.com/tutorials/a-beginners-introduction-to-css-animation--cms-21068
+*/
