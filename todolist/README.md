@@ -30,19 +30,19 @@ body{
 ```
 
 ## Jelaskan tag HTML5 yang kamu ketahui.
-```<!DOCTYPE html>``` sebagai deklarasi file HTML.
-```<html></html>``` sebagai root.
-```<title></title>``` sebagai judul
-```<body></body>``` sebagai isi yang akan ditampilkan. 
-```<style></style>``` untuk menambahkan desain pada elemen, seperti font-size, font-family, dan color.
-```<head></head>``` sebagai informasi awal dokumen, biasanya berisi nama penulis, judul dokumen dan keywords. 
-```<p></p>``` untuk membuat paragraf.
-```<table></table>``` untuk membuat table.
+- ```<!DOCTYPE html>``` sebagai deklarasi file HTML.
+- ```<html></html>``` sebagai root.
+- ```<title></title>``` sebagai judul
+- ```<body></body>``` sebagai isi yang akan ditampilkan. 
+- ```<style></style>``` untuk menambahkan desain pada elemen, seperti font-size, font-family, dan color.
+- ```<head></head>``` sebagai informasi awal dokumen, biasanya berisi nama penulis, judul dokumen dan keywords. 
+- ```<p></p>``` untuk membuat paragraf.
+- ```<table></table>``` untuk membuat table.
 
 ## Jelaskan tipe-tipe CSS selector yang kamu ketahui.
-id = memilih elemen berdasarkan id, id yang dimiliki tiap elemen tentu berbeda-beda.
-class = memilih seluruh elemen yang berada pada class yang sama.
-element = memilih berdasarkan <element> saja.
+- id = memilih elemen berdasarkan id, id yang dimiliki tiap elemen tentu berbeda-beda.
+- class = memilih seluruh elemen yang berada pada class yang sama.
+- element = memilih berdasarkan <element> saja.
 
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 1. Menambahkan ```{% load static %}``` pada awal line tiap file HTML yang akan diberikan CSS style.
